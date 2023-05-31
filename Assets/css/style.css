@@ -723,12 +723,15 @@ p {
     visibility: hidden;
   }
   /*Galeria*/
-  .intro-content,
+ .intro-content,
   .grid {
     display: block;
     grid-template-columns: 1fr;
     align-self: center;
   }
+  .grid-main-heading {
+    margin-left: 27%;
+}
   .gallery-img {
     margin-bottom: 10%;
   }
@@ -742,42 +745,23 @@ p {
     display: none;
   }
 
+
   /*Contato*/
 
-  .newsletter {
-    width: 100%;
-  }
+
   .intro-newsletter {
     margin: 0;
   }
 
   .newsletter img {
-    width: 100%;
-    max-width: 20rem;
-    max-height: 20rem;
-    overflow: hidden;
-    padding: 2rem;
+    margin-bottom: 10%;
   }
 
   .newsletter p {
-    font-size: 2rem;
-    align-items: center;
-    justify-content: center;
-    justify-self: center;
+    font-size: 1.5rem;
+    
   }
-
-  .form-group input,
-  .form-group textarea {
-    border: none;
-    padding: 4%;
-    width: 50%;
-    font-size: 30%;
-    outline: none;
-  }
-
   .form-group button {
-    font-size: 2rem;
-    padding: 2.06%;
-    width: 30%;
+    padding: .6%;   
   }
 }
