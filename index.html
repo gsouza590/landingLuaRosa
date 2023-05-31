@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="Assets/css/style.css" />
+
+  <title>LandingPage</title>
+</head>
+
+
+<body>
+
+  <input type="checkbox" id="close-menu" class="close-menu" aria-label="Close Menu" role="button">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
+  <aside class="menu">
+    <div class="main-content menu-content">
+      <h1 onclick="document.getElementById('close-menu').checked = false;">
+        <a href="#intro" class="link"></a>
+      </h1>
+
+      <nav>
+        <ul onclick="document.getElementById('close-menu').checked = false;">
+          <li><a href="#intro">HOME</a></li>
+          <li><a href="#sobre">SOBRE</a></li>
+          <li><a href="#gallery">GALERIA</a></li>
+          <li><a href="#contact">CONTATO</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="menu-spacing"></div>
+
+  <section id="intro" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-img">
+        <div class="moldura">
+          <img src="Assets/img/fotohome.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="intro-text-content">
+        <span class="luarosa">
+          Lua Rosa
+        </span>
+        <p class="acessorios">
+          A C E S S Ó R I O S
+        </p>
+      </div>
+      <a class="btn-explore" href="https://luarosaacessorios.lojavirtualnuvem.com.br/?ref=admin_header" target="_blank">EXPLORE</a>
+    </div>
+  </section>
+
+  <section id="sobre" class=" dark-bg section">
+    <div class="main-content intro-content">
+      <div class="historia-text-content">
+        <h1>
+          NOSSA HISTÓRIA
+        </h1>
+        <p>
+          Na nossa jornada, buscamos manifestar a essência e os valores da mulher contemporânea. Temos a convicção de
+          que a Lua Rosa representa o que todas as mulheres se identificam: força interior, renovação pessoal e
+          delicadeza. Nossa história é conduzida pela crença de que a elegância e a sofisticação podem ser acessíveis a
+          todas as mulheres.
+        </p>
+        <span>Elegância em cada detalhe</span>
+      </div>
+      <div class="about-img">
+        <div>
+          <img src="Assets/img/foto-nossa-historia.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="grid-one main-bg section-gallery">
+    <div class=" main-content grid-one-content">
+      <h2 class="grid-main-heading">Coleções</h2>
+      
+      <div class="grid">
+        <div class="gallery-container">
+        <div class="gallery-img">
+          <a href="https://luarosaacessorios.lojavirtualnuvem.com.br/brincos/" target="_blank"> <img src="Assets/img/brincos.jpg" height="240" width="240" alt="categoria brincos"
+            loading="lazy"></a>
+        </div>
+        <p>BRINCOS</p>
+      </div>
+
+      <div class="gallery-container">
+        <div class="gallery-img">
+          <a href="https://luarosaacessorios.lojavirtualnuvem.com.br/colares/" target="_blank"> <img src="Assets/img/colares.jpg"  height="240" width="240"  alt="categoria colares"
+            loading="lazy"></a>
+        </div>
+        <p>COLARES</p>
+        </div>
+
+        <div class="gallery-container">
+        <div class="gallery-img">
+          <a href="https://luarosaacessorios.lojavirtualnuvem.com.br/pulseiras/" target="_blank"> <img src="Assets/img/pulseiras.jpg" height="240" width="240"alt="categoria pulseiras"
+            loading="lazy"></a>
+        </div>
+        <p>PULSEIRAS</p>
+      </div>
+
+      <div class="gallery-container">
+        <div class="gallery-img">
+         <a href="https://luarosaacessorios.lojavirtualnuvem.com.br/piercing/" target="_blank"> <img src="Assets/img/piercings.jpg"  height="240" width="240" alt="categoria piercings"
+            loading="lazy"> </a>
+        </div>
+        <p>PIERCINGS</p>
+      </div>
+    </section>
+
+
+     <section id="gallery" class="grid-one main-bg section-gallery">
+    <div class=" main-content grid-one-content">
+      <h2 class="grid-main-heading">NOVIDADES</h2>
+      
+      <div class="grid">
+        <div class="gallery-container">
+        <div class="gallery-img">
+          <a href="https://luarosaacessorios.lojavirtualnuvem.com.br/produtos/choker-chorrente-rabo-de-rato-no-rodio/" target="_blank"><img src="Assets/img/pulseiraChoker.jpg" height="240" width="240" alt="categoria brincos"
+            loading="lazy"></a>
+        </div>
+        <p>R$69,00</p>
+      </div>
+
+      <div class="gallery-container">
+        <div class="gallery-img">
+          <a href="https://luarosaacessorios.lojavirtualnuvem.com.br/produtos/kit-dupla-de-argola-lisa/" target="_blank"> <img src="Assets/img/kitargola.jpg"  height="240" width="240"  alt="categoria colares"
+            loading="lazy"> </a>
+        </div>
+        <p>R$39,00</p>
+        </div>
+
+        <div class="gallery-container">
+        <div class="gallery-img">
+          <a href="https://luarosaacessorios.lojavirtualnuvem.com.br/produtos/pulseira-zirconia-quadrada/" target="_blank"> <img src="Assets/img/zirconia.jpg" height="240" width="240"alt="categoria pulseiras"
+            loading="lazy"></a>
+        </div>
+        <p>R$49,00</p>
+      </div>
+
+      <div class="gallery-container">
+        <div class="gallery-img">
+          <a href="https://luarosaacessorios.lojavirtualnuvem.com.br/produtos/pulseira-elo-fecho-boia-dourado/" target="_blank"> <img src="Assets/img/pulseiraElo.jpg"  height="240" width="240" alt="categoria piercings"
+            loading="lazy"></a>
+        </div>
+        <p>R$29,00</p>
+      </div>
+    </section>
+
+
+  <section id="contact" class="intro dark-bg section">
+    <div class="main-content intro-content ">
+      <div class="intro-newsletter newsletter">
+        <img src="Assets/img/carta.svg" alt="carta envio">
+        <p> Junte-se a nós e mergulhe no poder da Lua Rosa! </p>
+        <p> Inscreva-se e receba as melhores novidades e promoções!! </p>
+      </div>
+
+      <div class="intro-img"></div>
+      <div class="form-group">
+        <input type="email" placeholder="email" name="email" id="email">
+        <button type="submit">Enviar</button>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer white-bg">
+    <span class="footer-copy">&#169; LuaRosa. All rights reserved</span>
+  </footer>
+  <a href="https://api.whatsapp.com/send?phone=5513981508609&text=Ola,%20mais%20informa%C3%A7%C3%B5es!"
+          target="_blank" class="whats">
+          <img src="Assets/img/iconeWhats.svg" class="ri-whatsapp-line"></img>
+        </a>
+</body>
+
+</html>

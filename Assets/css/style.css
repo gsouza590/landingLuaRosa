@@ -1,0 +1,795 @@
+/*a11y html check - verificar acessibilidade  acheker.ca*/
+@font-face {
+  font-family: "amsterdam-one";
+  src: url("../fonts/amsterdam-one.ttf") format("truetype");
+}
+
+/* Elementos Html */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; /* fazer com que a rolagem da pagina fique mais agradável */
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 4rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 5rem;
+}
+
+h4 {
+  font-size: 4.5rem;
+}
+
+h5 {
+  font-size: 4rem;
+}
+
+h6 {
+  font-size: 3.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 3rem;
+}
+
+/*Intro*/
+
+.intro-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  min-height: 100vh;
+}
+
+.intro-text-content,
+.intro-img {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text-content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.9rem;
+  font-weight: light;
+}
+.intro-img img,
+.intro-img svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*Menu CSS*/
+.link {
+  display: inline-block;
+  width: 20px;
+  height: 24px;
+  background-image: url("../img/luahome.svg");
+  background-size: cover;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #d3b1c2;
+}
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.menu h1 {
+  font-size: 2.3rem;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+.menu ul li a {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  padding: 2rem;
+  font-size: 1.4rem;
+  position: relative;
+  color: #474a59;
+  font-weight: bold;
+}
+
+.menu ul li a:hover {
+  color: #ffe3ef;
+  transition: all 0.3s;
+}
+
+/*Home*/
+.main-bg {
+  background-image: url("../img/backgrounding.png");
+  background-size: cover;
+  background-position: center center;
+}
+.luarosa {
+  font-family: "amsterdam-one";
+  font-size: 10rem;
+  margin-bottom: 10rem;
+  margin-top: 20rem;
+  margin-left: 20rem;
+}
+.acessorios {
+  margin-left: 20rem;
+}
+
+.moldura {
+  border: 0.2rem solid #d3b1c2;
+  width: 39%;
+  height: 50%;
+  position: absolute;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+
+  margin-top: 20rem;
+  margin-left: 5%;
+}
+.moldura img {
+  justify-content: center;
+}
+.btn-explore {
+  display: flex;
+  position: relative;
+  height: 5rem;
+  width: 20rem;
+  align-items: center;
+  justify-content: center;
+  left: 112%;
+  top: 40%;
+  color: #ffe3ef;
+  background-color: #7c6a86;
+  border-radius: 1rem;
+}
+.btn-explore:hover {
+  cursor: pointer;
+}
+
+/* Sobre */
+.dark-bg {
+  background-image: url("../img/fundo-escuro2.svg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.historia-text-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.historia-text-content h1 {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: #ffe0f3;
+  bottom: 15%;
+  left: 10%;
+}
+.historia-text-content p {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  font-size: 2.5rem;
+  margin-right: -40%;
+  color: #ffe0f3;
+  text-align: justify;
+}
+
+.historia-text-content span {
+  position: relative;
+  font-family: "amsterdam-one";
+  font-size: 2rem;
+  color: #ffe0f3;
+  text-align: justify;
+  top: 5%;
+  left: 10%;
+}
+.about-img {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.full-width {
+  width: 100%;
+  flex: 1 1 100%;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+/*Galeria*/
+.grid-one-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+}
+
+.grid-main-heading {
+  margin-top: 10%;
+  margin-left: 40%;
+  color: #7c6a86;
+  font-size: 3rem;
+}
+
+.grid-description {
+  padding-bottom: 5rem;
+}
+.grid {
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid h2 {
+  font-size: 3rem;
+  position: relative;
+  padding-left: 5rem;
+  padding-bottom: 3rem;
+}
+.gallery-container{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.gallery-container p{
+  position: relative;
+  left: 5%;
+  color: #7c6a86 ;
+}
+.gallery-img {
+  width: 100%;
+  max-width: 23rem;
+  max-height: 23rem;
+  overflow: hidden;
+  border-radius: 5rem;
+  margin-left: 5rem;
+}
+.gallery-img a{
+  cursor: pointer;
+}
+
+/*Contato*/
+.intro-newsletter {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter {
+  width: 100rem;
+  height: 60rem;
+  margin: 10rem;
+}
+.newsletter p {
+  align-items: center;
+  align-content: center;
+  font-family: "Lato", sans-serif;
+  font-size: 3rem;
+  color: #ffe0f3;
+}
+
+.newsletter img {
+  width: 100%;
+  max-width: 30rem;
+  max-height: 30rem;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20%;
+}
+
+.form-group label {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none;
+  padding: 1.5rem 2rem;
+  width: 60%;
+  font-size: 2rem;
+  outline: none;
+}
+.form-group input::placeholder {
+  color: rgb(122, 119, 119);
+  font-size: 2rem;
+}
+
+.form-group button {
+  border: 0.5rem solid #ffff;
+  background: #7c6a86;
+  color: #ffff;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  width: 20%;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.form-group button:hover {
+  background: rgb(77, 66, 83);
+  color: var(--primary-color);
+}
+.form-group ::placeholder {
+  color: #eeeeee;
+}
+
+/*Rodape*/
+.footer {
+  text-align: center;
+  font-size: 1.6rem;
+  background-color: #d3b1c2;
+  width: 100%;
+}
+
+.footer a {
+  color: #444;
+}
+.footer p {
+  margin: 0;
+  padding: 1rem;
+}
+
+.close-menu {
+  display: none;
+}
+.ri-whatsapp-line {
+  height: 7rem;
+}
+.whats {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 5rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+  .intro-content,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .link {
+    display: inline-block;
+    width: 44rem;
+    height: 35rem;
+    margin-left: 13%;
+    background-image: url("../img/luarosaescuro.png");
+    background-size: cover;
+  }
+
+  .menu {
+    bottom: 0;
+    display: none;
+  }
+
+  .menu-content,
+  .menu-content ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menu-content {
+    height: 100vh;
+  }
+
+  .close-menu-label::after {
+    content: "☰";
+    position: fixed;
+    z-index: 2;
+    top: 2rem;
+    right: 2rem;
+    color: #ffff;
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  .close-menu:checked ~ .menu {
+    display: block;
+  }
+  .close-menu:checked ~ .close-menu-label::after {
+    content: "x";
+  }
+
+  /*Home*/
+
+  .moldura {
+    margin-top: 50%;
+    width: 23%;
+    height: 20%;
+  }
+  .intro-text-content {
+    position: relative;
+    right: 18%;
+    margin-top: 30%;
+  }
+  .luarosa {
+    margin-top: 20%;
+    font-size: 4rem;
+    margin-left: 40%;
+    margin-bottom: 5%;
+  }
+  .intro-text-content p {
+    font-size: 1.5rem;
+    margin-bottom: 10%;
+    margin-left: 40%;
+  }
+
+  .btn-explore {
+    position: relative;
+    height: 5rem;
+    width: 10rem;
+    left: 46%;
+  }
+  /*Sobre*/
+  .historia-text-content {
+    align-items: center;
+    justify-content: center;
+  }
+  .historia-text-content h1 {
+    font-size: 3rem;
+    margin-top: 50%;
+    margin-right: 20%;
+  }
+
+  .historia-text-content p {
+    position: relative;
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    color: #ffe0f3;
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .historia-text-content span {
+    margin-top: 10%;
+    margin-right: 20%;
+  }
+
+  .about-img {
+    visibility: hidden;
+  }
+  /*Galeria*/
+  .intro-content,
+  .grid {
+    display: block;
+    grid-template-columns: 1fr;
+    align-self: center;
+  }
+  .gallery-img {
+    margin-bottom: 10%;
+  }
+  .gallery-img img {
+    width: 100%;
+  }
+  .grid-one-content {
+    display: relative;
+  }
+  .menu-spacing {
+    display: none;
+  }
+
+  /*Contato*/
+
+  .newsletter {
+    width: 100%;
+  }
+  .intro-newsletter {
+    margin: 0;
+  }
+
+  .newsletter img {
+    width: 100%;
+    max-width: 20rem;
+    max-height: 20rem;
+    overflow: hidden;
+    padding: 2rem;
+  }
+
+  .newsletter p {
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    border: none;
+    padding: 4%;
+    width: 50%;
+    font-size: 30%;
+    outline: none;
+  }
+
+  .form-group button {
+    font-size: 2rem;
+    padding: 2.46%;
+    width: 30%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+  }
+
+  h3 {
+    font-size: 3.4rem;
+  }
+
+  h4 {
+    font-size: 3.2rem;
+  }
+
+  h5 {
+    font-size: 3rem;
+  }
+
+  h6 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .intro-content,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    bottom: 0;
+    display: none;
+  }
+
+  .menu-content,
+  .menu-content ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menu-content {
+    height: 100vh;
+  }
+
+  .close-menu-label::after {
+    content: "☰";
+    position: fixed;
+    z-index: 2;
+    top: 2rem;
+    right: 2rem;
+    background: var(--primary-color);
+    color: #ffff;
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  .close-menu:checked ~ .menu {
+    display: block;
+  }
+  .close-menu:checked ~ .close-menu-label::after {
+    content: "x";
+  }
+
+  /*Home*/
+
+  .moldura {
+    margin-top: 50%;
+    width: 23%;
+    height: 20%;
+    visibility: hidden;
+  }
+  .intro-text-content {
+    position: relative;
+    right: 18%;
+    margin-top: 30%;
+  }
+  .luarosa {
+    margin-top: 40%;
+    font-size: 4rem;
+    margin-left: 40%;
+    margin-bottom: 5%;
+  }
+  .intro-text-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20%;
+    margin-left: 40%;
+  }
+
+  .btn-explore {
+    position: relative;
+    height: 5rem;
+    width: 10rem;
+    left: 40%;
+  }
+  /*Sobre*/
+  .historia-text-content {
+    align-items: center;
+    justify-content: center;
+  }
+  .historia-text-content h1 {
+    font-size: 3rem;
+    margin-top: 50%;
+    margin-right: 20%;
+  }
+
+  .historia-text-content p {
+    position: relative;
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    color: #ffe0f3;
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .historia-text-content span {
+    margin-top: 10%;
+    margin-right: 20%;
+  }
+
+  .about-img {
+    visibility: hidden;
+  }
+  /*Galeria*/
+  .intro-content,
+  .grid {
+    display: block;
+    grid-template-columns: 1fr;
+    align-self: center;
+  }
+  .gallery-img {
+    margin-bottom: 10%;
+  }
+  .gallery-img img {
+    width: 100%;
+  }
+  .grid-one-content {
+    display: relative;
+  }
+  .menu-spacing {
+    display: none;
+  }
+
+  /*Contato*/
+
+  .newsletter {
+    width: 100%;
+  }
+  .intro-newsletter {
+    margin: 0;
+  }
+
+  .newsletter img {
+    width: 100%;
+    max-width: 20rem;
+    max-height: 20rem;
+    overflow: hidden;
+    padding: 2rem;
+  }
+
+  .newsletter p {
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    border: none;
+    padding: 4%;
+    width: 50%;
+    font-size: 30%;
+    outline: none;
+  }
+
+  .form-group button {
+    font-size: 2rem;
+    padding: 2.06%;
+    width: 30%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+  }
+
+  h3 {
+    font-size: 3.4rem;
+  }
+
+  h4 {
+    font-size: 3.2rem;
+  }
+
+  h5 {
+    font-size: 3rem;
+  }
+
+  h6 {
+    font-size: 2.8rem;
+  }
+}
